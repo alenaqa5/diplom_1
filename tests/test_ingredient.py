@@ -1,7 +1,7 @@
 class TestIngredient:
     def test_get_price_of_ingredient(self, create_ingredient):
         actual_price = create_ingredient.get_price()
-        expected_price = create_ingredient.price  # Извлекаем цену из объекта
+        expected_price = create_ingredient.price
         assert actual_price == expected_price
 
     def test_get_name_of_ingredient(self, create_ingredient):
